@@ -67,7 +67,7 @@ def getPostData():
     if dic['id'] is None or dic['password'] is None:
         abort(403)
 
-    if not(dic['id'] == '你设定的post ID' and dic['你设定的post 密码'] == 'lgh438'):
+    if not(dic['id'] == '你设定的post ID' and dic['password'] == '你设定的post 密码'):
         abort(401)
 
     r = Response()
