@@ -2,6 +2,8 @@
 
 安卓开发基础大作业-后端部分
 
+> 前端部分请见 [Android-devlopment](https://github.com/FAWC-bupt/Android-devlopment)
+
 利用我自己的学号密码通过`selenium`获得登录教务的 Cookie，然后用`BeautifulSoup`等爬取解析空教室数据。
 
 后端 Web 框架是 `Flask`，在 5438 端口上特定的 Http Post 请求将返回 Json 格式数据，Post 请求的负载（Payload）中**id** 和 **password** 是必须的，作用是验证前端设备，具体详见`net.py`。（我在运行过程中发现经常会有不明来历的 IP 发送请求，真可怕）鉴于`selenium`令人捉急的内存占用和运行速度，加之没有人会每时每刻都在借教室，本程序设定了每 30 分钟爬取一次并存储到内存缓存中（没有数据持久化），该功能调用了 WinAPI，因此似乎只有 WindowsServer 能用。如果需要使用本人服务器获取数据，可以通过邮箱 kevin_lgh@foxmail.com 联系我。
