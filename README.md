@@ -2,7 +2,7 @@
 
 安卓开发基础大作业-后端部分
 
-> 前端部分请见 [Android-devlopment](https://github.com/FAWC-bupt/Android-devlopment)
+> 前端部分请见 [BuptRoom](https://github.com/FAWC-bupt/BuptRoom)
 
 利用我自己的学号密码通过`selenium`获得登录教务的 Cookie，然后用`BeautifulSoup`等爬取解析空教室数据。
 
